@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This is my web development portfolio, take a look around to see my work.">
+  <title>My Portfolio | Ryan Whitlock</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+<link rel="manifest" href="/images/site.webmanifest">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+     <div class="logo">
+      <a href="#home" aria-label="Go to homepage">
+        <img src="/images/favicon-32x32.png" alt="Portfolio Logo" class="logo-img">
+      </a>
+     </div>
+  <nav class="main-navigation">
+    <ul class="main-navigation-links">
+      <li><a href="#home" class="navigation-link">Home</a></li>
+      <li><a href="#about-me" class="navigation-link">About me </a></li>
+      <li><a href="#websites" class="navigation-link">My websites </a></li>
+      <li><a href="#contact" class="navigation-link">Contact me </a></li>
+    </ul>
+  </nav>
+  </header>
+  <main>
+  <section id="home" class="hero-section">
+    <h1>
+      <span class="visually-hidden" aria-hidden="true">&lt;h1&gt;</span>
+       Hi, I'm Ryan
+      <span class="visually-hidden" aria-hidden="true">&lt;/h1&gt;</span>
+    </h1>
+    <p class="hero-text">
+      <span class="visually-hidden" aria-hidden="true">
+      &lt;p&gt;
+      </span>
+      A future web developer
+       <span class="visually-hidden" aria-hidden="true">
+      &lt;/p&gt;
+      </span>
+    </p>
+  </section>
+  <section class="about-section" id="about-me">
+    <div class="about-container">
+      <div class="about-content">
+      <h2 class="about-title">About me</h2>
+      <p class="about-text">
+        Hello, my name is Ryan, and I am currently developing my skills to become a web developer. Even before a career transition, 
+        I found myself drawn to the process of coding websites in my spare time. The results and the sense of accomplishment gained from bringing my ideas to life, 
+        even in small ways, were rewarding. Following a period of re-evaluation, I have now made the decision to pursue web development as my primary career path. 
+        My immediate efforts are concentrated on building a strong foundation in front-end technologies, specifically HTML and CSS. 
+        I am also eager to expand my knowledge into version control using Git/GitHub, as well as learning JavaScript and modern frameworks such as React. 
+        For me, this journey is driven by the satisfaction of creating functional and visually engaging websites, and I am committed to continuous learning and growth in this field.
+      </p>
+      <h2 class ="skill-title">Skills & knowledge</h2>
+      <ul class="skill-list">
+        <li class="skill-item"><abbr title="HyperText Markup Language">HTML5</abbr></li>
+        <li class="skill-item"><abbr title="Cascading style sheet">CSS3</abbr></li>
+        <li class="skill-item">Browser Developer Tools</li>
+      </ul>
+      <p class="about-button-text">Want to learn more about me?</p>
+      <p class="about-me-link"><a href="https://rwhitlock-codes.github.io/About-me/" class="about-button">Click here</a></p>
+      </div>
+    </div>
+  </section>
+  <section id="websites" class="website-section">
+    <h2 class="website-title">Some of my websites</h2>
+    <div class="website-container">
+      <article class="website-boxes">
+      <a href="https://rwhitlock-codes.github.io/About-me/" aria-label="About me - Ryan Whitlock" target="_blank">
+        <img src="/images/about-me.png" alt="Picture of my about me website" loading="lazy" class="websites">
+      </a>
+      <p><a href="https://rwhitlock-codes.github.io/About-me/" aria-label="link to About me - Ryan Whitlock" class="website-link" target="_blank">About me | Ryan Whitlock</a></p>
+      </article>
+    </div>
+  </section>
+  </main>
+  <footer id="contact" class="contact-section">
+    <h2 class="contact-title">Let's connect</h2>
+    <div class="contact-container">
+      <article class="github-container">
+      <a href="https://github.com/RWhitlock-Codes" aria-label="Link to GitHub" target="_blank" class="github-img-link">
+      <img src="/images/GitHub_Invertocat_Dark.svg" alt="GitHub logo" loading="lazy" class="github-img">
+      </a>
+      <p> <a href="https://github.com/RWhitlock-Codes" aria-label="Link to GitHub" target="_blank" class="github-text">GitHub</a></p>
+      </article>
+      <article class="mail-container">
+        <a href="mailto:ryan.whitlock.dev@gmail.com" aria-label="Send me an email" target="_blank" class="mail-img-link">
+          <img src="/images/mail.svg" alt="envelope" loading="lazy" class="mail-img">
+        </a>
+        <p> <a href="mailto:ryan.whitlock.dev@gmail.com" aria-label="Send me an email" target="_blank" class="mail-link">Email</a></p>
+      </article>
+    </div>
+  </footer>
+</body>
+</html>
