@@ -62,13 +62,15 @@ font-family: "Roboto", sans-serif;
 }
 
 .navigation-link:hover{
-  color:var(--primary-text-color);
-  font-weight:800;
+  outline: 3px solid var(--accent-text-color);
+  outline-offset:3px;
+  text-decoration: underline;
 }
 
 .navigation-link:focus{
-  border:2px solid black;
-  border-radius:5px;
+  outline: 3px solid var(--accent-text-color);
+  outline-offset:3px;
+  text-decoration: underline;
 }
 
 
@@ -216,56 +218,43 @@ h1{
   text-align: center;
   font-size:2.8rem;
   font-family: "Montserrat", sans-serif;
+  padding-bottom:10px;
+}
+
+.websites{
+  width:250px;
+  height:250px;
 }
 
 .website-section{
   background-color: var(--background-dark);
-  color:var(--background-dark-text);  
+  color:var(--background-dark-text); 
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.website-boxes{
-  display: inline-block;
-}
-.websites{
-  width:15rem;
-  display: block;
-  transition: padding 0.2s ease-in-out, border 0.2s ease-in-out;
-  border-radius:10px;
- 
+.website-container{
+  display:grid;
+  grid-template-columns: 1fr;
+  gap:20px;
+} 
+
+.website-display{
+  text-align: center;
 }
 
 .website-link{
-  text-decoration: none;
   color:var(--background-dark-text);
-  font-size:1.3rem;
-  text-align: center;
-  transition: border 0.2s ease-in-out, color 0.2s ease-in-out;
-  font-family: "Roboto", sans-serif;
-}
-
-.website-link:visited{
   text-decoration: none;
-  color:var(--background-dark-text);
-  font-size:1.5rem;
-  text-align: center;
+  font-size: 1.6rem
 }
 
- .websites:hover{
-  border:5px solid black;
-  
-}
-
-.websites:focus{
-  border:10px solid black;
-}
-
-.website-link:hover{
-  color:var(--accent-color);
-  font-weight: 700;
-}
-
-.website-link:focus{
-  border:2px solid black;
+.website-link:hover, .website-link:focus{
+  outline: 3px solid var(--accent-text-color);
+  outline-offset:3px;
+  text-decoration: underline;
 }
 
 .contact-section{
@@ -293,7 +282,7 @@ h1{
   display:flex;
   justify-content: center;
   align-items: center;
-  gap:5px;
+  gap:10px;
 }
 .github-img{
   width:4rem; 
@@ -305,16 +294,17 @@ h1{
   color:var(--background-dark-text);
 }
 
-.github-text:hover{
-  color:#000;
-  font-weight:900;
+.github-text:hover,.github-text:focus{
+  outline: 3px solid var(--accent-text-color);
+  outline-offset:3px;
+  text-decoration: underline;
 }
 
 .mail-container{
   display:flex;
   justify-content: center;
   align-items:center;
-  gap:5px;
+  gap:10px;
 }
 
 .mail-img{
@@ -327,9 +317,10 @@ h1{
   color:var(--background-dark-text);  
 }
 
-.mail-link:hover{
-  color:#000;
-  font-weight: 900;
+.mail-link:hover,.mail-link:focus{
+  outline: 3px solid var(--accent-text-color);
+  outline-offset:3px;
+  text-decoration: underline;
 }
 
 /*talets*/
@@ -377,13 +368,20 @@ h1{
       font-size: 1.6rem;
     }
    
-  .websites{
-    width:25rem;
-  }
+    .website-container{
+      grid-template-columns: repeat(2, 1fr);
+      gap:30px;
+      margin-left:30px;
+      margin-right:auto;
+    }
 
-  .website-link{
-    font-size:1.8rem;
-  }
+    .website-section{
+      justify-content: flex-start;
+    }
+
+    .website-link{
+      font-size:2rem;
+    }
 
   .github-img{
     width:6rem;
@@ -414,6 +412,7 @@ h1{
   
   h1{
     font-size:6rem;
+    padding-bottom:1rem;
   }
 
   .hero-text{
@@ -432,11 +431,15 @@ h1{
   }
   
  
-  .websites{
-    width:30rem;
-    
-  }
+  .website-container{
+      grid-template-columns: repeat(3, 1fr);
+      gap:40px;
+      margin-left:50px;
+      margin-right:auto;
+      padding-left:50px;
+    }
 
+ 
   .website-link{
     font-size:2rem;
    
